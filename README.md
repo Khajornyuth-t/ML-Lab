@@ -13,27 +13,30 @@
 ### 1.1 สร้างและเปิดใช้งาน Environment
 
 รันคำสั่งต่อไปนี้ใน Terminal (ที่อยู่ใน Root Directory ของโปรเจกต์):
-
+1. สร้าง Virtual Environment ชื่อ .venv
 ```bash
-# 1. สร้าง Virtual Environment ชื่อ .venv
 python -m venv .venv
+```
+2. เปิดใช้งาน (Activate) Environment
+ สำหรับ Windows (PowerShell):
+ .\.venv\Scripts\Activate.ps1
+ สำหรับ Windows (Command Prompt):
+ .\.venv\Scripts\activate
+ สำหรับ macOS / Linux:
+ source .venv/bin/activate
 
-# 2. เปิดใช้งาน (Activate) Environment
-# สำหรับ Windows (PowerShell):
-# .\.venv\Scripts\Activate.ps1
-# สำหรับ Windows (Command Prompt):
-# .\.venv\Scripts\activate
-# สำหรับ macOS / Linux:
-# source .venv/bin/activate
 
-###1.2 อัปเดต Pip (ถ้ามีข้อความเตือน)
+1.2 อัปเดต Pip (ถ้ามีข้อความเตือน)
 หากมีข้อความเตือนให้อัปเดต pip ให้รันคำสั่งนี้ขณะที่ (.venv) ถูก Activate:
 
 ```bash
 python -m pip install --upgrade pip
+```
+
 
 ##2. การติดตั้ง Dependencies
 Dependencies ทั้งหมดสำหรับโปรเจกต์นี้ถูกบันทึกและ Pin เวอร์ชันไว้อย่างเข้มงวดในไฟล์ requirements.txt
 
 ```bash
 pip install -r requirements.txt
+```
